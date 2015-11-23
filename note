@@ -1,4 +1,19 @@
 note
 
+Server side:
+
 $ npm install express@4.13.3 --save
 $ npm install socket.io@1.3.7 --save
+var io = require('socket.io')(http);
+io.on('connection', function(){
+	console.log('User connected via socket.io');
+})
+
+
+
+
+Frontend:
+get jquery and socketio installed
+cdn.socket.io/socket.io-1.3.7.js
+<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+
